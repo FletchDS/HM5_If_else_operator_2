@@ -15,14 +15,14 @@ public class Main {
         }
 
         //Задача 2
-        short creationYear = (short) random.nextInt(2000, 2025);
+        short clientDeviceYear = (short) random.nextInt(2000, 2025);
 
-        System.out.printf("\n\nИндексы ОС: 0 - iOS, 1 - Android\nВыбран индекс %d\nГод создания %d\n", clientOS, creationYear);
+        System.out.printf("\n\nИндексы ОС: 0 - iOS, 1 - Android\nВыбран индекс %d\nГод создания %d\n", clientOS, clientDeviceYear);
 
         if (clientOS == 1) {
-            System.out.print("Установите " + (creationYear < 2015 ? "облегченную " : "") + "версию приложения для Android по ссылке");
+            System.out.print("Установите " + (clientDeviceYear < 2015 ? "облегченную " : "") + "версию приложения для Android по ссылке");
         } else {
-            System.out.print("Установите " + (creationYear < 2015 ? "облегченную " : "") + " версию приложения для iOS по ссылке");
+            System.out.print("Установите " + (clientDeviceYear < 2015 ? "облегченную " : "") + " версию приложения для iOS по ссылке");
         }
 
         //Задача 3
@@ -53,11 +53,11 @@ public class Main {
         }
 
         //Задача 5
-        byte month = (byte) random.nextInt(1, 14);
+        byte monthNumber = (byte) random.nextInt(1, 14);
 
-        System.out.printf("\n\nПорядковый номер месяца - %d\n", month);
+        System.out.printf("\n\nПорядковый номер месяца - %d\n", monthNumber);
 
-        switch (month) {
+        switch (monthNumber) {
             case 1, 2, 12:
                 System.out.print("Сейчас зима");
                 break;
